@@ -5,6 +5,8 @@ export default {
   generate: {
     routes: [
       'blogpost/DFS-BFS',
+      'blogpost/Union-find',
+      'blogpost/Knapsack-Problem',
     ]
   },
 
