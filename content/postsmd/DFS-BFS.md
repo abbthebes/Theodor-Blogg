@@ -15,7 +15,7 @@ author: Theodor Beskow
 ## What is DFS and BFS?
  
 DFS and BFS are two different ways to search through a graph. A DFS or depth first search searches as deep as possible first through one node before continuing to the next child. Compared to depth first search BFS or breadth first search searches all the neighbors of the currently visited nodes before searching deeper. These algorithms are very commonly used and easily implemented. Neither of the algorithms are able to handle weighted graphs. For weighted graphs you should instead use dijkstra or the bellman ford algorithm. The depth first search algorithm advantages is that it uses bit less time and space complexity than BFS. Breadth search first is a bit slower than the depth first search algorithm but BFS still has some use cases. BFS should be used when you for example want to find the shortest path between two nodes or if you want to detect if a graph is bipartite. The gif below shows the difference in what order DFS and BFS searches.  
-<img src="\pictures\DFS-BFS\dfs-vs-bfs.gif" alt="DFS-BFS gif" style="width:100%;">
+<img src="/pictures/DFS-BFS/dfs-vs-bfs.gif" alt="DFS-BFS gif" style="width:100%;">
  
 ## How to implement DFS and BFS
  
