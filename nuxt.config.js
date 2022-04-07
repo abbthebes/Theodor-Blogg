@@ -4,7 +4,9 @@ export default {
 
   generate: {
     routes: [
-      '/'
+      '/posts/balut',
+      '/posts/whereIsIt',
+      '/posts/how'
     ]
   },
 
