@@ -7,6 +7,7 @@ export default {
       'blogpost/DFS-BFS',
       'blogpost/Union-find',
       'blogpost/Knapsack-Problem',
+      'blogpost/Sliding-Window',
     ]
   },
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="z-50">
         <div id="header" :class="$route.path=='/' ? 'fixed' : ''">
             <div class="flexcontent">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/ABB_logo.svg/1280px-ABB_logo.svg.png" width="50px" class="linktext">

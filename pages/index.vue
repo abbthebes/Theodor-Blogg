@@ -1,6 +1,17 @@
 <template>
   <div>
-    <div><img src="\pictures\code_text_programming_146694_2560x1080.jpg" class="z-0" style="height:60vh; object-fit: cover;"></div>
+    <div>
+      <!-- ifall jag har image-backgrounf: url så hamnar den så -->
+    <!-- <div height="60vh" width="100wv" style="height:60vh; width: 100wv; background-image: url('\pictures\615b420a88a7b9f2f4813262_Web- Blog Hero (1600 x 520).png'); background-repeat: no-repeat; "> -->
+      <img src="\pictures\615b420a88a7b9f2f4813262_Web- Blog Hero (1600 x 520).png" class="z-0" style="height:60vh; object-fit: cover;">  
+      <div class="absolute top-24 left-16 z-10">
+        <p style="font-size:50px; color: white; font-weight: bold;">Beskow Innovation</p>
+        <p style="font-size:30px; color: white;">Innovation at it's finest</p>
+        <div @click="$router.push('/posts/all')" class="z-10" style="cursor: pointer; padding:5px; background-color: #CB3727; font-size:12px; font-weight: medium; width: 30%;">
+          <p style="color: white; margin:5px;">DISCOVER BLOGS</p> 
+        </div>
+      </div>
+    </div>
     
     <div style="width:80vw; margin: 0% 10% 0% 10%;">
       <div class="quick-about">
@@ -14,7 +25,7 @@
              <nuxt-content :document="about" style="margin:10%;" class="font-body"></nuxt-content>
           </div>
         </div>
-        <h1>New posts</h1>
+        <h1>Latest posts</h1>
         <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
           <div @click="goToDish(page.id)" class="w-56 m-6" style="cursor: pointer;" v-for="page in pages" :key="page.id">
             <PostItemComponent :item="page"></PostItemComponent>
