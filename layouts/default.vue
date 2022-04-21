@@ -1,11 +1,11 @@
 <template>
     <div class="z-50">
-        <div id="header" :class="$route.path=='/' ? 'fixed' : ''">
+        <div id="header" :class="$route.path=='/' ? 'absolute' : ''">
             <div class="flexcontent">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/ABB_logo.svg/1280px-ABB_logo.svg.png" width="50px" class="linktext">
+                <img src="\pictures\cropped-Beskows_logo-1.png" alt="logo" width="70px" class="linktext">
                 <nuxt-link to="/" class="linktext" style="color:white;"> Home </nuxt-link>
                 <nuxt-link to="/posts/all" class="linktext" style="color:white;"> Posts </nuxt-link>
-                <nuxt-link to="/about-us" class="linktext" style="color:white;"> About us</nuxt-link>
+                <nuxt-link to="/about-me" class="linktext" style="color:white;"> About me</nuxt-link>
                 
             </div>
         </div>
@@ -13,7 +13,7 @@
         <footer class="text-center text-white" style="background-color: #f1f1f1;">
             <div class="container pt-9">
                 <div class="flex justify-center mb-9">
-                <a href="#!" class="mr-9 text-gray-800">
+                <a href="https://www.facebook.com/" class="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -30,7 +30,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="#!" class="mr-9 text-gray-800">
+                <a href="https://twitter.com/" class="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -47,7 +47,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="#!" class="mr-9 text-gray-800">
+                <a href="https://www.behance.net/gallery/117672893/Cooking-blog?tracking_source=search_projects%7Cblog%20design" class="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -64,7 +64,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="#!" class="mr-9 text-gray-800">
+                <a href="https://www.instagram.com/" class="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -81,7 +81,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="#!" class="mr-9 text-gray-800">
+                <a href="https://se.linkedin.com/" class="mr-9 text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -98,7 +98,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="#!" class="text-gray-800">
+                <a href="https://github.com/abbthebes/Theodor-Blogg" class="text-gray-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"

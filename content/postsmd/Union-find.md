@@ -4,9 +4,9 @@ theme: ["all", "graph", "data-structures"]
 id: Union-find
 title: Union Find
 image: \pictures\Union-find\maxresdefault.jpg
-description: A union-find structure maintains a collection of sets. The sets are disjoint, so no element belongs to more than one set.
+description: A union-find structure maintains a collection of disjoint sets.
 created: "2022-03-31"
-updated: "2022-04-03"
+updated: "2022-04-16"
 author: Theodor Beskow
 ---
  
@@ -55,16 +55,21 @@ struct Union_Find{
     }
 };
 ```
- 
+
 <br>
  
-The Union_Find function is called when creating the structure and is used to initialize it. In this case the structure uses arrays to remember how big the structures are with "siz" and what the representative are for every node with "p". The same function just returns true if a and b are in the same structure and if not the function returns false. The Unite function node a and node with each other. The Unite function does this by first getting the representative node for both a and b and then attaching them so that they both share the same representative node and update the size of the united set. The last function find returns the representative of the node x. But the function does not only find the representative of the node it also so all the visited nodes will be represented by the representing node directly and not create a long tree. This last find logic makes it so most of the structure's functions effectively run in O(log n) instead of O(n) which is a big difference. The image below shows how this find function compresses the amount of pointers you need to search through to get the representative of a node.
+<div class="flex flex-wrap">
+    <div class="w-full md:w-1/2">
+        The Union_Find function is called when creating the structure and is used to initialize it. In this case the structure uses arrays to remember how big the structures are with "siz" and what the representative are for every node with "p". The same function just returns true if a and b are in the same structure and if not the function returns false. The Unite function node a and node with each other. The Unite function does this by first getting the representative node for both a and b and then attaching them so that they both share the same representative node and update the size of the united set. The last function find returns the representative of the node x. But the function does not only find the representative of the node it also so all the visited nodes will be represented by the representing node directly and not create a long tree. This last find logic makes it so most of the structure's functions effectively run in O(log n) instead of O(n) which is a big difference. The image below shows how this find function compresses the amount of pointers you need to search through to get the representative of a node.
+    </div>
+    <div class="w-full md:w-1/2">
+        <br>
+        <img src="\pictures\Union-find\images.png" alt="find() img" style="width:80%; margin-left:10%;">
+    </div>
+</div>
  
 <br>
- 
-<img src="\pictures\Union-find\images.png" alt="find() img" style="width:80%; margin-left:10%;">
- 
-<br>
+
  
 ## Practical use
  
