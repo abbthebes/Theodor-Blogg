@@ -2,7 +2,7 @@
     <div style="margin-left:10%; margin-right:10%;">
         <!-- {{$route.params.id}} -->
         <br>
-        <h1>Posts</h1>
+        <h1>Posts</h1>       
         <div class="flex items-center flex-wrap">
                     
             <nuxt-link to="/posts/all" v-if="$route.params.id == 'all'" class="rounded-full focus:outline-none focus:ring-2  focus:bg-indigo-50 focus:ring-indigo-800 mr-4 sm:mr-8">
@@ -55,6 +55,8 @@
             <PostItemComponent :item="page"></PostItemComponent>
           </div>
         </div>
+        <div class="h-0 2xl:h-28"></div>
+        
         <!-- <nuxt-content :document="post"></nuxt-content>
         <h1>{{ post.title }}</h1> -->
     </div>

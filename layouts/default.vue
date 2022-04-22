@@ -11,7 +11,7 @@
         </div>
         <nuxt />
         <footer class="text-center text-white" style="background-color: #f1f1f1;">
-            <div class="container pt-9">
+            <div class="container mx-auto pt-9">
                 <div class="flex justify-center mb-9">
                 <a href="https://www.facebook.com/" class="mr-9 text-gray-800">
                     <svg
